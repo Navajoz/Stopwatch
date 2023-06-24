@@ -1,0 +1,64 @@
+body {
+    background-color: #001C30;
+    font-family: 'Geologica', sans-serif;
+    font-family: monospace;
+    color: #fff;
+
+}
+
+#titulo {
+    text-align: center;
+    font-size: 50px ;
+    font-family: 'Geologica'
+  
+}
+
+#cronometro{
+    text-align: center;
+    
+}
+button {
+    color: #fff;
+    background-color: #001C30;
+    font-size: 32px;
+    cursor: pointer;
+    width: 8%;
+    border-radius: 5px;
+    margin-top: 100px;
+    
+}
+
+#timer {
+    font-size: 100px;
+    margin-top: 300px;
+    height: 25px;
+    display: fixed;
+    font-family: monospace;
+}
+#lap {
+    position: fixed; top: 0px; left: 0px; 
+    height: 50%;
+    width: 15%;
+    background-color: #001C30;
+    border-bottom-right-radius: 15px;
+    border: none;
+    display: block;
+}
+#laps {
+    list-style: none;
+    position: fixed; 
+    display: grid;
+    
+}
+li{
+    margin-bottom: 5px;
+   
+}
+#clear {
+    font-size: 16px;
+    margin-top: 0%;
+    border-radius: 10%;
+    width: fit-content;
+    height: fit-content;
+}
+

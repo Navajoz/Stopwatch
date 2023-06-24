@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Stopwatch</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+        
+    </style> 
+</head>
+<body>
+    <h1 id="titulo">STOPWATCH:</h1>
+
+    <section id="cronometro">
+        <div id="timer">
+            <span id="hr">00</span>:<span id="min">00</span>:<span id="sec">00</span>:<span id="mili">00</span>
+        </div>
+        <section class="botoes">
+            <button id="btn-start">START</button>
+            <button id="btn-lap">LAP</button>
+            <button id="btn-stop">STOP</button>
+            <button  id="btn-reset">RESET</button>
+        </section>
+    </section>
+    <div id="lap">
+        <h2>Lap:</h2>
+        <button id="clear">clear</i></button>
+        <ul id="laps"></ul>
+    </div>
+    <script src='main.js'></script>
+
+</body>
+</html>
