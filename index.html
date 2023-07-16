@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -11,12 +12,12 @@
                 extend: {
                     colors: {
                         rosabg: '#FFD0D0',
-                        fontcor: '#B31312'
+                        fontcor: '#B31312',
                     },
                     fontFamily: {
                         geologica: ['Geologica', 'sans-serif'],
                         numeros: ['monospace']
-        
+
                     }
                 }
             }
@@ -26,31 +27,45 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
-        
-    </style> 
+    </style>
 </head>
-<body class="bg-rosabg font-geologica text-fontcor">
-    <h1 id="titulo" class="text-center text-6xl">STOPWATCH:</h1>
 
-    <section id="cronometro" class="text-center justify-center">
-        <div id="timer" class="font-numeros text-9xl mt-72">
-            <span id="hr">00</span>:<span id="min">00</span>:<span id="sec">00</span>:<span id="mili">00</span>
-        </div>
-        <section class="botoes">
-            <button id="btn-start" class="w-1/12 mt-10 text-3xl  border-4 rounded border-fontcor">START</button>
-            <button id="btn-lap" class="w-1/12 mt-10 text-3xl  border-4 rounded border-fontcor" >LAP</button>
-            <button id="btn-stop" class="w-1/12 mt-10 text-3xl  border-4 rounded border-fontcor" >STOP</button>
-            <button  id="btn-reset" class="w-1/12 mt-10 text-3xl  border-4 rounded border-fontcor ">RESET</button>
+<body class="bg-rosabg font-geologica text-fontcor">
+    <header>
+        <nav class="justify-between flex-row text-center">
+            <a href="index.html" class="border-2 border-fontcor rounded">Stopwatch</a>
+            <a href="clock.html" class="border-2 border-fontcor rounded">Clock</a>
+        </nav>
+    </header>
+        <h1 id="titulo" class="text-center text-6xl">STOPWATCH:</h1>
+
+        <section id="cronometro" class="text-center justify-center mb-96" >
+            <div id="timer" class="font-numeros text-9xl mt-52">
+                <span id="hr">00</span>:<span id="min">00</span>:<span id="sec">00</span>:<span id="mili">00</span>
+            </div>
+            <section class="botoes">
+                <button id="btn-start" class="w-1/12 mt-10 text-3xl  border-4 rounded border-fontcor">START</button>
+                <button id="btn-lap" class="w-1/12 mt-10 text-3xl  border-4 rounded border-fontcor">LAP</button>
+                <button id="btn-stop" class="w-1/12 mt-10 text-3xl  border-4 rounded border-fontcor">STOP</button>
+                <button id="btn-reset" class="w-1/12 mt-10 text-3xl  border-4 rounded border-fontcor ">RESET</button>
+            </section>
         </section>
-    </section>
-    <div id="lap" class="block fixed inset-y-0">
-        <h2>Lap:</h2>
-        <button id="clear" class=" border-2 rounded border-fontcor w-fit h-7">clear</i></button>
-        <ul id="laps"></ul>
-    </div>
-    <script src='/js/main.js'></script>
-    <script src='/js/cronometro.js'></script>
+        <div id="lap" class="block fixed inset-y-6">
+            <h2>Lap:</h2>
+            <button id="clear" class=" border-2 rounded border-fontcor w-fit h-7">clear</i></button>
+            <ul id="laps"></ul>
+        </div>
+
+    <footer class=" flex flex-row justify-between text-3xl">
+        <h1>By Navajoz</h1>
+        <a href="https://github.com/theNavajo">
+            <img src='./assets/iconmonstr-github-1.svg' alt="GitHub Logo">
+        </a>
+    </footer>
+    <script src='/js/Stopwatch/main.js'></script>
+    <script src='/js//Stopwatch/cronometro.js'></script>
 
 
 </body>
+
 </html>

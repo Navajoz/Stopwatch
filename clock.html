@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Stopwatch</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rosabg: '#FFD0D0',
+                        fontcor: '#B31312'
+                    },
+                    fontFamily: {
+                        geologica: ['Geologica', 'sans-serif'],
+                        numeros: ['monospace']
+
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-rosabg font-geologica text-fontcor">
+    <header>
+        <nav class="justify-between flex-row text-center">
+            <a href="index.html" class="border-2 border-fontcor rounded">Stopwatch</a>
+            <a href="clock.html" class="border-2 border-fontcor rounded">Clock</a>
+        </nav>
+    </header>
+    <h1 id="titulo" class="text-center text-6xl">CLOCK:</h1>
+    <main class="">
+        <section class="font-numeros text-9xl mt-60 h-94 text-center justify-center font-numeros">
+        <span id="hoursTime">00</span>:<span id="minutesTime">00</span>:<span id="secondsTime">00</span>
+        </section>
+        <section class="text-center text-3xl mt-40 mb-52">
+            <h1>Brazil</h1>
+            <h2>UTC-3</h2>
+        </section>
+    </main>
+    <footer class="flex flex-row justify-between text-3xl">
+        <h1>By Navajoz</h1>
+        <a href="https://github.com/theNavajo">
+            <img src='./assets/iconmonstr-github-1.svg' alt="GitHub Logo">
+        </a>
+    </footer>
+
+<script src="./js/Clock/relogio.js"></script>
+</body>
+
+</html>
